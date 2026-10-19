@@ -652,9 +652,33 @@ button {
   background: var(--black);
   padding: 28px 3.2vw;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 16px;
   font-size: 10px;
   color: #aaa;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.footer-credit {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+  text-align: center;
+  letter-spacing: 0.12em;
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-studio {
+  color: var(--pink);
+  font-weight: 600;
+  letter-spacing: 0.14em;
 }
 
 /* ─── Scroll-reveal utility ────────────────────────────────────────────────── */
@@ -834,7 +858,12 @@ button {
   .footer {
     padding: 25px 5vw;
     gap: 15px;
-    flex-wrap: wrap;
+  }
+
+  .footer-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
 }
 
